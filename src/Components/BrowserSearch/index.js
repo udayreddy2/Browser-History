@@ -79,7 +79,7 @@ const initialHistoryList = [
   },
 ]
 
-class BrowserHistory extends Component {
+class BrowsingHistory extends Component {
   state = {
     searchInput: '',
     searchResults: initialHistoryList,
@@ -139,7 +139,7 @@ class BrowserHistory extends Component {
             className="history"
           />
           <div className="search-cont">
-            <button className="search-btn" type="button" testid="search">
+            <button className="search-btn" type="button" data-testid="search">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/search-img.png"
                 alt="search"
@@ -161,5 +161,4 @@ class BrowserHistory extends Component {
     )
   }
 }
-
-export default BrowserHistory
+export default BrowsingHistory
